@@ -18,6 +18,6 @@ https://drive.google.com/open?id=1Y7zsE0JCnX6do7YRH9eSdUmGOrjXQP4r
 `python -m src.merge --model_name models/stacked_gru_2_dot/stacked_gru_2_dot_002_0.3374 models/stacked_gru_2_dot/stacked_gru_2_dot_003_0.3374 models/stacked_gru_2_dot/stacked_gru_2_dot_004_0.3388 models/stacked_gru_2_dot/stacked_gru_2_dot_005_0.3357 models/stacked_gru_2_dot/stacked_gru_2_dot_006_0.3367 models/stacked_gru_2_dot/stacked_gru_2_dot_007_0.3374 models/stacked_gru_2_dot/stacked_gru_2_dot_008_0.3374`
 
 ## environments
-python3.6+ is required
-see requiements.txt for package and version details
+python3.6+ is required<br>
+see requiements.txt for package and version details<br>
 `pip install -r requirements.txt`

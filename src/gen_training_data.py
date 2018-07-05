@@ -16,7 +16,6 @@ def pad(sentences, mapping, pad_length):
 
 
 def main(args):
-    '''
     data_loader = DataLoader('raw_data/training_data/', 'raw_data/testing_data.csv')
     print('data loaded')
     train_pos = data_loader.gen_positive('training')
@@ -29,12 +28,10 @@ def main(args):
     print('valid negative done')
     with open('raw_data/train.pkl', 'wb') as fp:
         pickle.dump((train_pos, train_neg, valid_pos, valid_neg), fp)
-    '''
     with open(args.training_path, 'rb') as fp:
         train_pos, train_neg, valid_pos, valid_neg = pickle.load(fp)
     with open(args.mapping, 'rb') as fp:
         mapping = pickle.load(fp)
-    
     print('padding start')
     train_q = pad(train_pos[0] + train_neg[0], mapping, 71)
     print('train q done')

@@ -23,7 +23,7 @@ def main(args):
     with open(args.training_path, 'rb') as fp:
         train_q, train_a, train_y, valid_q, valid_a, valid_y = pickle.load(fp)
     embedding = np.load('models/char_base_100_embedding.npy')
-    model = get_model('stacked_gru_2_dot', embedding)
+    model = get_model(args.model, embedding)
     os.makedirs(f'models/{args.model}', exist_ok=True)
     early_stopping = EarlyStopping(monitor='val_loss', patience=3)
     checkpoint = ModelCheckpoint(f'models/{args.model}/{args.model}' + '_{epoch:03d}_{val_loss:.4f}')

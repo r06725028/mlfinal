@@ -19,11 +19,11 @@ def main(args):
     prediction_s = prediction_df.groupby('id').apply(lambda df: df.set_index('option').idxmax())['score']
     prediction_s.name = 'ans'
     prediction_s.to_csv(args.output_path, header=True)
-    
+
 
 def parse_args():
     import argparse
-    parser = argparse.ArgumentParser('hw5')
+    parser = argparse.ArgumentParser('final')
     parser.add_argument('-train', '--training-path', default='./raw_data/train_padded.pkl')
     parser.add_argument('-test', '--testing-path', default='./raw_data/testing_data.txt')
     parser.add_argument('-o', '--output-path', default='prediction.csv')

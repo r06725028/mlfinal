@@ -1,7 +1,12 @@
 # mlfinal
 
 ### pad過的training
-https://drive.google.com/open?id=1Y7zsE0JCnX6do7YRH9eSdUmGOrjXQP4r
+https://drive.google.com/open?id=1Y7zsE0JCnX6do7YRH9eSdUmGOrjXQP4r<br>
+download to `raw_data/`
+
+## Models
+public best: https://drive.google.com/file/d/1S-bA69PoP0fd5InlYgYYq-RA3qXBKQVC/view?usp=sharing<br>
+private best: https://drive.google.com/file/d/1JFSSDGkBW8nbn34tQS4z6OoJx6_yx8oS/view?usp=sharing
 
 
 ## train word2vec
